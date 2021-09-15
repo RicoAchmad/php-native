@@ -2,10 +2,10 @@
     <FORM action ="" method="POST">
         <fieldset>
         Nama Kucing :
-        <input type ="text" name ="nama">
+        <input type ="text" name ="nama" required>
         <br><br>
         Warna Kucing :
-        <input type ="text" name ="warna">
+        <input type ="text" name ="warna" required>
         <br><br>
     Masukan Jumlah Kaki Kucing:
         <input type ="number" name ="kaki">
@@ -22,22 +22,24 @@ if (isset($_POST['Pilih'])) {
     $warna = $_POST['warna'];
     $kaki = $_POST['kaki'];
 
-    echo "Nama Kucing  = $nama";
-    echo "<br>";
-    echo "Warna Kucing = $warna";
 
     class kucing{
         public $kaki;
+        public $warna;
+        public $nama;
         public function jumlahKaki($kaki){
             if ($kaki == 4){
                 return "<br>Kucing Anda Memiliki $kaki kaki , Kucing Anda NORMAL";
             } else if ($kaki > 4){
                 return "<br>kucing Anda Memiliki $kaki kaki , Kucing Anda SILUMAN";
             } else if ($kaki < 4){
-                return "<br>Kucing Anda Memiliki $kaki kaki , Kucing Anda CINGKEDS";
+                return "<br>Kucing Anda Memiliki $kaki kaki , Kucing Anda CINGKED";
             }
         }
     }
     $kucing = new kucing();
+    echo "Nama Kucing = " .$kucing->nama=$nama;
+    echo "<br>";
+    echo "Warna Kucing = " . $kucing->warna=$warna;
     echo $kucing->jumlahKaki($kaki);
 }
