@@ -15,7 +15,7 @@
         </FORM>
 </body>
 </html>
-<DOCTYPE html>
+
 <?php
 if (isset($_POST['Pilih'])) {
     $nama = $_POST['nama'];
