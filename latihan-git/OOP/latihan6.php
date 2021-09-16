@@ -7,7 +7,7 @@
         Warna Kucing :
         <input type ="text" name ="warna" required>
         <br><br>
-    Masukan Jumlah Kaki Kucing:
+        Masukan Jumlah Kaki Kucing:
         <input type ="number" name ="kaki">
         <br><br>
         <input type="submit" name="Pilih" value="Input">
