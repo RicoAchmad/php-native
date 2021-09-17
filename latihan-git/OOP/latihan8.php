@@ -35,8 +35,8 @@ if (isset($_POST['simpan'])) {
 
 
 class account{
-    public $name;
-    public $id;
+    public $name = "Rico";
+    public $id = "49957191";
 }
 class pay extends account{
     public $name;
@@ -46,10 +46,10 @@ class pay extends account{
     
 
     public function verifikasi($name , $id){
-    if ($name == "rico" && $id == 123){
+    if ($name == "Rico" && $id == 49957191){
         return "Username/ID Exist";
     } else {
-        return "Username/ID Doesn't Exist";
+        return "Username/ID incorrect";
     }
 }
 
